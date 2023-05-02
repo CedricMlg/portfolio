@@ -1,0 +1,70 @@
+{
+  "projects": [
+    {
+      "name": "SportSee",
+      "description": "The project was to create a dashboard in a profile page for the user to check on his performances. I structured the application with React, interacted with an API to retrieve user informations and used a library to create dynamic graphs based on user data.",
+      "date": "2023",
+      "skills": [
+        "React",
+        "API",
+        "NPM",
+        "Recharts",
+        "Axios",
+        "HTML",
+        "SASS",
+        "User Stories",
+        "Responsive",
+        "State Management"
+      ],
+      "github": "https://github.com/CedricMlg/P12_SportSee_Malingre_Cedric",
+      "live": "",
+      "pictures": [
+        "https://github.com/CedricMlg/portfolio/blob/master/public/SportSee.png"
+      ],
+      "presentation": ""
+    },
+    {
+      "name": "Kasa",
+      "description": "This is a project for a real estate agency that wants to update its website. In this project I used React to create a navigation between different pages and reusable components, I retrieved the ads with JSON files.",
+      "date": "2023",
+      "skills": ["React", "HTML", "SASS", "Responsive", "State Management"],
+      "github": "https://github.com/CedricMlg/P11_Kasa_Malingre_Cedric",
+      "live": "",
+      "pictures": [
+        "https://github.com/CedricMlg/portfolio/blob/master/public/Kasa_Home.png",
+        "https://github.com/CedricMlg/portfolio/blob/master/public/Kasa_Fiche-Logement.png",
+        "https://github.com/CedricMlg/portfolio/blob/master/public/Kasa_A-Propos.png",
+        "https://github.com/CedricMlg/portfolio/blob/master/public/Kasa_404.png"
+      ],
+      "presentation": ""
+    },
+    {
+      "name": "FishEye",
+      "description": "This is the project of a website that hosts the profiles of different photographers with their photos and videos. This project allowed me to learn how to use JavaScript with a JSON file and to make my site accessible to people with disabilities who need a screen reader.",
+      "date": "2022",
+      "skills": ["JavaScript", "HTML", "SASS", "Accessibility", "Responsive"],
+      "github": "https://github.com/CedricMlg/P6_FishEye_Malingre_Cedric",
+      "live": "",
+      "pictures": [
+        "https://github.com/CedricMlg/portfolio/blob/master/public/FishEye_Home.png",
+        "https://github.com/CedricMlg/portfolio/blob/master/public/FishEye_photographer_page.png",
+        "https://github.com/CedricMlg/portfolio/blob/master/public/FishEye_lightbox_modal.png",
+        "https://github.com/CedricMlg/portfolio/blob/master/public/FishEye_contact_modal.png"
+      ],
+      "presentation": ""
+    },
+    {
+      "name": "Ohmyfood",
+      "description": "In this project I had to create an app where users could choose between menus of different restaurants an make a reservation. I had to create the app on mobile first with HTML CSS and make the animations with CSS.",
+      "date": "2022",
+      "skills": ["HTML", "SASS", "Responsive", "Animations"],
+      "github": "https://github.com/CedricMlg/P3_ohmyfood_Malingre_Cedric",
+      "live": "https://cedricmlg.github.io/P3_ohmyfood_Malingre_Cedric/",
+      "pictures": [
+        "https://github.com/CedricMlg/portfolio/blob/master/public/Ohmyfood_homepage.png",
+        "https://github.com/CedricMlg/portfolio/blob/master/public/Ohmyfood_menu.png"
+      ],
+      "presentation": ""
+    }
+  ]
+}

@@ -22,7 +22,7 @@
       "pictures": [
         "https://github.com/CedricMlg/portfolio/blob/master/public/SportSee.png"
       ],
-      "presentation": ""
+      "logo": "https://github.com/CedricMlg/portfolio/blob/master/public/SportSee_logo.svg"
     },
     {
       "id": "2",
@@ -38,7 +38,7 @@
         "https://github.com/CedricMlg/portfolio/blob/master/public/Kasa_A-Propos.png",
         "https://github.com/CedricMlg/portfolio/blob/master/public/Kasa_404.png"
       ],
-      "presentation": ""
+      "logo": "https://github.com/CedricMlg/portfolio/blob/master/public/Kasa_logo.svg"
     },
     {
       "id": "3",
@@ -54,7 +54,7 @@
         "https://github.com/CedricMlg/portfolio/blob/master/public/FishEye_lightbox_modal.png",
         "https://github.com/CedricMlg/portfolio/blob/master/public/FishEye_contact_modal.png"
       ],
-      "presentation": ""
+      "logo": "https://github.com/CedricMlg/portfolio/blob/master/public/FishEye_logo.svg"
     },
     {
       "id": "4",
@@ -68,7 +68,7 @@
         "https://github.com/CedricMlg/portfolio/blob/master/public/Ohmyfood_homepage.png",
         "https://github.com/CedricMlg/portfolio/blob/master/public/Ohmyfood_menu.png"
       ],
-      "presentation": ""
+      "logo": "https://github.com/CedricMlg/portfolio/blob/master/public/Ohmyfood_logo.svg"
     }
   ]
 }

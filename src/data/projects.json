@@ -1,6 +1,7 @@
 {
   "projects": [
     {
+      "id": "1",
       "name": "SportSee",
       "description": "The project was to create a dashboard in a profile page for the user to check on his performances. I structured the application with React, interacted with an API to retrieve user informations and used a library to create dynamic graphs based on user data.",
       "date": "2023",
@@ -24,6 +25,7 @@
       "presentation": ""
     },
     {
+      "id": "2",
       "name": "Kasa",
       "description": "This is a project for a real estate agency that wants to update its website. In this project I used React to create a navigation between different pages and reusable components, I retrieved the ads with JSON files.",
       "date": "2023",
@@ -39,6 +41,7 @@
       "presentation": ""
     },
     {
+      "id": "3",
       "name": "FishEye",
       "description": "This is the project of a website that hosts the profiles of different photographers with their photos and videos. This project allowed me to learn how to use JavaScript with a JSON file and to make my site accessible to people with disabilities who need a screen reader.",
       "date": "2022",
@@ -54,6 +57,7 @@
       "presentation": ""
     },
     {
+      "id": "4",
       "name": "Ohmyfood",
       "description": "In this project I had to create an app where users could choose between menus of different restaurants an make a reservation. I had to create the app on mobile first with HTML CSS and make the animations with CSS.",
       "date": "2022",

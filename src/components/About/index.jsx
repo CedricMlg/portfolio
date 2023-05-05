@@ -19,9 +19,9 @@ export default function About() {
           my friends and the peoples I work with.
         </p>
       </div>
-      <h5 className="about__skills">
+      <h4 className="about__skills">
         My <span>skills</span>
-      </h5>
+      </h4>
     </div>
   );
 }

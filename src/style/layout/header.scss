@@ -1,12 +1,9 @@
-header {
-  background-color: $third-color;
-  position: sticky;
-}
-
 .header {
+  background-color: $third-color;
+  position: fixed;
   width: 89.271%;
   height: 100px;
-  margin: auto;
+  padding: 0 100px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

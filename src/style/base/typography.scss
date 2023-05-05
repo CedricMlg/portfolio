@@ -49,3 +49,41 @@
     color: #ffffff;
   }
 }
+
+.about {
+  &__title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 94px;
+    color: #ffffff;
+    & span {
+      color: $main-color;
+    }
+  }
+  &__block {
+    &-description {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 55px;
+      color: #ffffff;
+      & span {
+        color: $main-color;
+      }
+    }
+  }
+  &__skills {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 94px;
+    color: #ffffff;
+    & span {
+      color: $main-color;
+    }
+  }
+}

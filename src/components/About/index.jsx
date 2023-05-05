@@ -7,7 +7,7 @@ export default function About() {
       <div className="about__block-description">
         {" "}
         <p className="about__description">
-          I&apos;m a Front-End Developer living in France. I love building web
+          I&apos;m a Front-End <span>Developer</span> living in France. I love building web
           sites, I have a passion for beautiful designed.
         </p>
         <p className="about__description">

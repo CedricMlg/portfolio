@@ -1,5 +1,19 @@
 .about {
-    &__title {
-        margin: 0;
+    margin-top: 200px;
+  &__title {
+    margin: 0;
+  }
+  &__block {
+    &-description {
+      width: 1600px;
     }
+  }
+  &__description {
+    margin: 50px 0;
+  }
+  &__skills {
+    display: flex;
+    justify-content: center;
+    margin: 80px 0 0 0;
+  }
 }

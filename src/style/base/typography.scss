@@ -9,3 +9,43 @@
     color: #ffffff;
   }
 }
+
+.home {
+  &__name {
+    & h1 {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 96px;
+      line-height: 112px;
+      color: #ffffff;
+    }
+  }
+  &__job {
+    & h2 {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 80px;
+      line-height: 94px;
+      color: $main-color;
+    }
+    & h3 {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 50px;
+      line-height: 59px;
+      color: #ffffff;
+    }
+  }
+  &__contact {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 41px;
+    text-align: center;
+    color: #ffffff;
+  }
+}

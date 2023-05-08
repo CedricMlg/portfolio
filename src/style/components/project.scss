@@ -1,0 +1,16 @@
+.project {
+  &__block {
+    &-logo {
+      background-color: white;
+      height: 400px;
+      width: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__logo {
+    height: 300px;
+    width: 300px;
+  }
+}

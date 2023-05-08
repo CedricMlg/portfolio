@@ -1,6 +1,6 @@
 .header {
   &__nav {
-    font-family: "Roboto";
+    font-family: $main-font;
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
@@ -13,7 +13,7 @@
 .home {
   &__name {
     & h1 {
-      font-family: "Roboto";
+      font-family: $main-font;
       font-style: normal;
       font-weight: 400;
       font-size: 96px;
@@ -23,7 +23,7 @@
   }
   &__job {
     & h2 {
-      font-family: "Roboto";
+      font-family: $main-font;
       font-style: normal;
       font-weight: 400;
       font-size: 80px;
@@ -31,7 +31,7 @@
       color: $main-color;
     }
     & h3 {
-      font-family: "Roboto";
+      font-family: $main-font;
       font-style: normal;
       font-weight: 400;
       font-size: 50px;
@@ -40,7 +40,7 @@
     }
   }
   &__contact {
-    font-family: "Roboto";
+    font-family: $main-font;
     font-style: normal;
     font-weight: 400;
     font-size: 35px;
@@ -52,7 +52,7 @@
 
 .about {
   &__title {
-    font-family: "Roboto";
+    font-family: $main-font;
     font-style: normal;
     font-weight: 400;
     font-size: 80px;
@@ -64,7 +64,7 @@
   }
   &__block {
     &-description {
-      font-family: "Roboto";
+      font-family: $main-font;
       font-style: normal;
       font-weight: 400;
       font-size: 40px;
@@ -76,7 +76,21 @@
     }
   }
   &__skills {
-    font-family: "Roboto";
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 94px;
+    color: #ffffff;
+    & span {
+      color: $main-color;
+    }
+  }
+}
+
+.work {
+  &__title {
+    font-family: $main-font;
     font-style: normal;
     font-weight: 400;
     font-size: 80px;

@@ -101,3 +101,60 @@
     }
   }
 }
+
+.contact {
+  &__title {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 94px;
+    color: white;
+    & span {
+      color: $main-color;
+    }
+  }
+  &__description {
+    & p {
+      font-family: $main-font;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 47px;
+      color: #ffffff;
+      & span {
+        color: $main-color;
+      }
+    }
+  }
+  &__form {
+    & input,
+    textarea {
+      font-family: $main-font;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 35px;
+      line-height: 41px;
+      &::placeholder {
+        color: rgba(0, 0, 0, 0.5);
+      }
+    }
+    & span {
+      font-family: $main-font;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 41px;
+      color: $main-color;
+    }
+  }
+  &__submit {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 41px;
+    text-align: center;
+    color: #ffffff;
+  }
+}

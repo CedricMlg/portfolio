@@ -67,27 +67,29 @@ export default function Contact() {
       <h4 className="contact__title">
         <span>Contact</span> me
       </h4>
-      <p>
-        I&apos;m actively looking for full time job opportunities as a{" "}
-        <span>Front-End Developer</span>.
-      </p>
-      <p>But if you have any request or question you know what tot do !</p>
-      <div className="contact__form">
-        <form ref={form} onSubmit={sendEmail}>
-          {inputs.map((input) => (
-            <Input
-              key={input.id}
-              {...input}
-              // value={values[input.name]}
-              // onChange={onChange}
-            />
-          ))}
-          <textarea name="contact_message" placeholder="Message" />
+      <div className="contact__description">
+        <p>
+          I&apos;m actively looking for full time job opportunities as a{" "}
+          <span>Front-End Developer</span>.
+        </p>
+        <p>But if you have any request or question you know what to do !</p>
+      </div>
+      <form className="contact__form" ref={form} onSubmit={sendEmail}>
+        {inputs.map((input) => (
+          <Input
+            key={input.id}
+            {...input}
+            // value={values[input.name]}
+            // onChange={onChange}
+          />
+        ))}
+        <textarea name="contact_message" placeholder="Message" />
+        <div className="contact__block-submit">
           <button className="contact__submit" type="submit">
             Send
           </button>
-        </form>
-      </div>
+        </div>
+      </form>
     </div>
   );
 }

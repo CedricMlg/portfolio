@@ -3,7 +3,8 @@ import { useParams } from "react-router-dom";
 
 export default function Project() {
   let { id } = useParams();
-  const project = projects.filter((project) => project.id === id);
+  const array = projects.filter((project) => project.id === id);
+  const project = array[0];
 
-  return <div>index</div>;
+  return <div className="project">index</div>;
 }

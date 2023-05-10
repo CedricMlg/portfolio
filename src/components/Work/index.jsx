@@ -1,4 +1,4 @@
-import Project from "../Project";
+import ProjectCard from "../ProjectCard";
 import { projects } from "../../data/projects.json";
 
 export default function Work() {
@@ -9,7 +9,7 @@ export default function Work() {
       </h4>
       <div className="work__projects">
         {projects.map((project) => (
-          <Project key={project.id} project={project} />
+          <ProjectCard key={project.id} project={project} />
         ))}
       </div>
     </div>

@@ -158,3 +158,83 @@
     color: #ffffff;
   }
 }
+
+.project {
+  & h5 {
+    & span {
+      color: $main-color;
+    }
+  }
+  &__title {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 94px;
+    color: #ffffff;
+  }
+  &__block {
+    &-description {
+      & h5 {
+        font-family: $main-font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 56px;
+        color: #ffffff;
+      }
+    }
+    &-skills {
+      & h5 {
+        font-family: $main-font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 56px;
+        color: #ffffff;
+      }
+    }
+  }
+  &__presentation {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 75px;
+
+    color: #ffffff;
+  }
+  &__description {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40px;
+    color: #ffffff;
+  }
+  &__skill {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    color: #ffffff;
+  }
+  &__check {
+    text-decoration: none;
+    & svg:nth-child(1) {
+      fill: $main-color;
+    }
+    &-text {
+      font-family: $main-font;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 38px;
+      color: #ffffff;
+    }
+    & svg:nth-child(3) {
+      fill: white;
+    }
+  }
+}

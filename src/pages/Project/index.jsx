@@ -15,23 +15,26 @@ export default function Project() {
       <div className="project">
         <div className="project__block-left">
           <h4 className="project__title">{project.name}</h4>
-          <div className="project__block-description">
-            <h5>
-              <span>Project</span> description
-            </h5>
-            <p className="project__description">{project.description}</p>
-          </div>
-          <div className="project__block-skills">
-            <h5>
-              Used <span>skills</span>
-            </h5>
-            <div className="project__usedSkills">
-              {" "}
-              {project.skills.map((skill, index) => (
-                <div key={index} className="project__skill">
-                  {skill}
-                </div>
-              ))}
+          <div className="project__block-ds">
+            {" "}
+            <div className="project__block-description">
+              <h5>
+                <span>Project</span> description
+              </h5>
+              <p className="project__description">{project.description}</p>
+            </div>
+            <div className="project__block-skills">
+              <h5>
+                Used <span>skills</span>
+              </h5>
+              <div className="project__usedSkills">
+                {" "}
+                {project.skills.map((skill, index) => (
+                  <div key={index} className="project__skill">
+                    {skill}
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>

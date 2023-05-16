@@ -1,0 +1,15 @@
+.close-modal {
+  z-index: 1;
+  position: absolute;
+  padding: 0;
+  top: -40px;
+  right: -40px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  & svg {
+    width: 80px;
+    height: 80px;
+    fill: $main-color;
+  }
+}

@@ -1,14 +1,40 @@
+import { useState } from "react";
 import { projects } from "../../data/projects.json";
 import { useParams } from "react-router-dom";
 import { ReactComponent as Github } from "../../assets/github.svg";
 import { ReactComponent as GithubPages } from "../../assets/githubpages.svg";
 import { ReactComponent as Arrow } from "../../assets/arrow.svg";
+import { ReactComponent as Cross } from "../../assets/cross.svg";
+import Carousel from "../../components/Carousel";
+import Modal from "react-modal";
+
+Modal.setAppElement("#root");
 
 export default function Project() {
   let { id } = useParams();
   const array = projects.filter((project) => project.id === id);
   const project = array[0];
-  console.log(project.live.length);
+  const [modalIsOpen, setIsOpen] = useState(false);
+
+  const customStyles = {
+    content: {
+      padding: "0",
+      overflow: "visible",
+      width: "fit-content",
+      left: "50%",
+      transform: "translate(-50%, 0)",
+      border: "none",
+      inset: "40px 40px 60px 50%",
+    },
+  };
+
+  function openModal() {
+    setIsOpen(true);
+  }
+
+  function closeModal() {
+    setIsOpen(false);
+  }
 
   return (
     <main>
@@ -44,6 +70,7 @@ export default function Project() {
           </div>
           <div
             className="project__picture"
+            onClick={openModal}
             style={{
               backgroundImage: `url(${project.pictures[0]})`,
               backgroundRepeat: "no-repeat",
@@ -68,6 +95,21 @@ export default function Project() {
             </a>
           </div>
         </div>
+        <Modal
+          isOpen={modalIsOpen}
+          onRequestClose={closeModal}
+          style={customStyles}
+        >
+          <button
+            type="button"
+            title="Close modal"
+            className="close-modal"
+            onClick={closeModal}
+          >
+            <Cross />
+          </button>
+          <Carousel props={project.pictures} />
+        </Modal>
       </div>
     </main>
   );

@@ -212,8 +212,7 @@
     line-height: 40px;
     color: #ffffff;
   }
-  &__skill
-   {
+  &__skill {
     font-family: $main-font;
     font-style: normal;
     font-weight: 400;
@@ -236,6 +235,19 @@
     }
     & svg:nth-child(3) {
       fill: white;
+    }
+  }
+}
+
+.carousel {
+  &__bullet {
+    &-point {
+      font-family: $main-font;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 34px;
+      line-height: 38px;
+      color: black;
     }
   }
 }

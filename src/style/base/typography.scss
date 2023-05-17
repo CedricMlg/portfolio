@@ -1,12 +1,15 @@
 .header {
   &__nav {
-    font-family: $main-font;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 42px;
-    text-align: center;
-    color: #ffffff;
+    & a {
+      font-family: $main-font;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 42px;
+      text-align: center;
+      text-decoration: none;
+      color: #ffffff;
+    }
   }
 }
 

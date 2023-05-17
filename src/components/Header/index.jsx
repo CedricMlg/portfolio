@@ -16,10 +16,18 @@ export default function Header() {
         </Link>
         <nav className="header__nav">
           <ul className="header__nav-app">
-            <li>About</li>
-            <li>My skills</li>
-            <li>Work</li>
-            <li>Contact</li>
+            <li>
+              <Link to={"/about"}>About</Link>
+            </li>
+            <li>
+              <Link to={"/skills"}>My skills</Link>
+            </li>
+            <li>
+              <Link to={"/work"}>Work</Link>
+            </li>
+            <li>
+              <Link to={"/contact"}>Contact</Link>
+            </li>
           </ul>
         </nav>
         <nav className="header__nav">

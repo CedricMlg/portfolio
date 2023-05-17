@@ -1,8 +1,15 @@
 import About from "../../components/About";
 import Contact from "../../components/Contact";
 import Work from "../../components/Work";
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
+  let navigate = useNavigate();
+  const routeChange = () => {
+    let path = `/contact`;
+    navigate(path);
+  };
+
   return (
     <main>
       <div className="home">
@@ -14,13 +21,13 @@ export default function Home() {
             <h2>Web developer</h2>
             <h3>Front-End Developer</h3>
           </div>
-          <button className="home__contact" type="button">
+          <button className="home__contact" type="button" onClick={routeChange}>
             Let&apos;s talk
           </button>
         </div>
       </div>
-      <About />
-      <Work />
+      <About page={false} />
+      <Work page={false} />
       <Contact />
     </main>
   );

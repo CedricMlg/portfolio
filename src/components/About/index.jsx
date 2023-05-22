@@ -35,7 +35,8 @@ export default function About({ page }) {
         ""
       ) : (
         <h4 className="about__skills">
-          My <span>skills</span>
+          My
+          <span> skills</span>
         </h4>
       )}
     </div>

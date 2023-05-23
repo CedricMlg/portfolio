@@ -38,25 +38,25 @@ export default function Project() {
 
   return (
     <main>
-      <div className="project">
-        <div className="project__block-left">
-          <h4 className="project__title">{project.name}</h4>
-          <div className="project__block-ds">
+      <div className="projectPage">
+        <div className="projectPage__block-left">
+          <h4 className="projectPage__title">{project.name}</h4>
+          <div className="projectPage__block-ds">
             {" "}
-            <div className="project__block-description">
+            <div className="projectPage__block-description">
               <h5>
                 <span>Project</span> description
               </h5>
-              <p className="project__description">{project.description}</p>
+              <p className="projectPage__description">{project.description}</p>
             </div>
-            <div className="project__block-skills">
+            <div className="projectPage__block-skills">
               <h5>
                 Used <span>skills</span>
               </h5>
-              <div className="project__usedSkills">
+              <div className="projectPage__usedSkills">
                 {" "}
                 {project.skills.map((skill, index) => (
-                  <div key={index} className="project__skill">
+                  <div key={index} className="projectPage__skill">
                     {skill}
                   </div>
                 ))}
@@ -64,12 +64,12 @@ export default function Project() {
             </div>
           </div>
         </div>
-        <div className="project__block-right">
-          <div className="project__block-presentation">
-            <h5 className="project__presentation">Presentation</h5>
+        <div className="projectPage__block-right">
+          <div className="projectPage__block-presentation">
+            <h5 className="projectPage__presentation">Presentation</h5>
           </div>
           <div
-            className="project__picture"
+            className="projectPage__picture"
             onClick={openModal}
             style={{
               backgroundImage: `url(${project.pictures[0]})`,
@@ -77,20 +77,28 @@ export default function Project() {
               backgroundSize: "cover",
             }}
           />
-          <div className="project__block-check">
+          <div className="projectPage__block-check">
             {" "}
             {project.live.length === 0 ? (
               ""
             ) : (
-              <a href={project.live} target="_blank" className="project__check">
+              <a
+                href={project.live}
+                target="_blank"
+                className="projectPage__check"
+              >
                 <GithubPages />
-                <p className="project__check-text">Check it live</p>
+                <p className="projectPage__check-text">Check it live</p>
                 <Arrow />
               </a>
             )}
-            <a href={project.github} target="_blank" className="project__check">
+            <a
+              href={project.github}
+              target="_blank"
+              className="projectPage__check"
+            >
               <Github />
-              <p className="project__check-text">Check GitHub</p>
+              <p className="projectPage__check-text">Check GitHub</p>
               <Arrow />
             </a>
           </div>

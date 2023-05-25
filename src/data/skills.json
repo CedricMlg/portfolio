@@ -1,0 +1,30 @@
+{
+  "development": [
+    { "name": "React", "logo": "/development/react.svg" },
+    { "name": "JavaScript", "logo": "/development/js.svg" },
+    { "name": "SASS", "logo": "/development/sass.svg" },
+    { "name": "CSS", "logo": "/development/css.svg" },
+    { "name": "HTML", "logo": "/development/html.svg" },
+    { "name": "GreenSock", "logo": "/development/gsap.svg" },
+    { "name": "StoryBook", "logo": "/development/storybook.svg" },
+    { "name": "Redux", "logo": "/development/redux.svg" },
+    { "name": "Jotai", "logo": "/development/jotai.svg" },
+    { "name": "JSON", "logo": "/development/json.svg" },
+    { "name": "Jest", "logo": "/development/jest.svg" },
+    { "name": "MySQL", "logo": "/development/mysql.svg" },
+    { "name": "PHP", "logo": "/development/php.svg" },
+    { "name": "Swagger", "logo": "/development/swagger.svg" }
+  ],
+
+  "tools": [
+    { "name": "VS Code", "logo": "/tools/vscode.svg" },
+    { "name": "Figma", "logo": "/tools/figma.svg" },
+    { "name": "Git", "logo": "/tools/git.svg" },
+    { "name": "NPM", "logo": "/tools/npm.svg" },
+    { "name": "Google", "logo": "/tools/google.svg" },
+    { "name": "Google Lighthouse", "logo": "/tools/lighthouse.svg" },
+    { "name": "Postman", "logo": "/tools/postman.svg" },
+    { "name": "Slack", "logo": "/tools/slack.svg" },
+    { "name": "Trello", "logo": "/tools/trello.svg" }
+  ]
+}

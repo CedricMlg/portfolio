@@ -4,3 +4,9 @@ $main-color: #e42a2a;
 $second-color: #373737;
 $third-color: #2d2d2d;
 $main-font: Roboto;
+
+:root {
+  --main-color: #{$main-color};
+  --second-color: #{$second-color};
+  --third-color: #{$third-color};
+}

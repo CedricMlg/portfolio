@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { ReactComponent as CarouselArrow } from "../../assets/carouselArrow.svg";
 
-function Carousel(props) {
+function Carousel({ props }) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const pictures = props.props;
+  console.log(props);
+  const pictures = props;
 
   const goToPrev = () => {
     const isFirstSlide = currentIndex === 0;

@@ -1,0 +1,44 @@
+.radarChart {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  & div:nth-child(1) {
+    position: relative;
+    top: -30px;
+  }
+  & div:nth-child(2) {
+    position: absolute;
+  }
+  &__arrows {
+    display: flex;
+    justify-content: center;
+    transform: translate(0, 50%);
+    bottom: 70%;
+    width: 100%;
+    height: fit-content;
+    & button {
+      padding: 0;
+      background-color: transparent;
+      border: none;
+      width: fit-content;
+      cursor: pointer;
+      & svg {
+        width: 60px;
+        height: 50px;
+        & path {
+            fill: $main-color;
+        }
+      }
+    }
+    & :nth-child(1) {
+      margin-right: 45%;
+    }
+    & :nth-child(2) {
+      margin-left: 45%;
+    }
+  }
+  &__prevRadar {
+    transform: rotate(180deg);
+  }
+}

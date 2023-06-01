@@ -314,16 +314,6 @@
       }
     }
   }
-  &__chart {
-    & text {
-      font-family: $main-font, sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 26px;
-      line-height: 40px;
-      fill: #ffffff;
-    }
-  }
   &__element {
     & p {
       font-family: $main-font, sans-serif;
@@ -333,5 +323,16 @@
       line-height: 47px;
       color: #ffffff;
     }
+  }
+}
+
+.radarChart {
+  & text {
+    font-family: $main-font, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 40px;
+    fill: #ffffff;
   }
 }

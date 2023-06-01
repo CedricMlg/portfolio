@@ -1,0 +1,64 @@
+{
+  "devSkills": {
+    "e1": [
+      {
+        "subject": "React",
+        "mastery": 75
+      },
+      {
+        "subject": "JavaScript",
+        "mastery": 80
+      },
+      {
+        "subject": "SASS",
+        "mastery": 85
+      },
+      {
+        "subject": "CSS",
+        "mastery": 90
+      },
+      {
+        "subject": "HTML",
+        "mastery": 85
+      },
+      {
+        "subject": "GreenSock",
+        "mastery": 40
+      },
+      {
+        "subject": "StoryBook",
+        "mastery": 65
+      }
+    ],
+    "e2": [
+      {
+        "subject": "Redux",
+        "mastery": 65
+      },
+      {
+        "subject": "Jotai",
+        "mastery": 60
+      },
+      {
+        "subject": "JSON",
+        "mastery": 90
+      },
+      {
+        "subject": "Jest",
+        "mastery": 65
+      },
+      {
+        "subject": "MySQL",
+        "mastery": 65
+      },
+      {
+        "subject": "PHP",
+        "mastery": 60
+      },
+      {
+        "subject": "Swagger",
+        "mastery": 55
+      }
+    ]
+  }
+}

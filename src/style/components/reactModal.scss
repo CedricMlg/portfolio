@@ -1,0 +1,10 @@
+.ReactModal {
+  &__Body {
+    &--open {
+      overflow: hidden;
+    }
+  }
+  &__Overlay {
+    z-index: 2;
+  }
+}

@@ -82,9 +82,10 @@
     font-family: $main-font, sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 80px;
-    line-height: 94px;
+    font-size: 100px;
+    line-height: 100px;
     color: #ffffff;
+    text-align: center;
     & span {
       color: $main-color;
     }
@@ -334,5 +335,29 @@
     font-size: 26px;
     line-height: 40px;
     fill: #ffffff;
+  }
+}
+
+.modal {
+  &__title {
+    font-family: $main-font, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 30px;
+    color: #ffffff;
+    text-align: center;
+    & span {
+      color: $main-color;
+    }
+  }
+  &__skill {
+    font-family: $main-font, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 30px;
+    color: #ffffff;
+    text-align: center;
   }
 }

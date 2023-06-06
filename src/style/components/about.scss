@@ -1,5 +1,5 @@
 .about {
-    margin-top: 200px;
+  margin-top: 200px;
   &__title {
     margin: 0;
   }
@@ -14,7 +14,9 @@
   &__skills {
     display: flex;
     justify-content: center;
+    position: relative;
     margin: 80px 0 0 0;
+    cursor: pointer;
     & span {
       margin-left: 20px;
     }

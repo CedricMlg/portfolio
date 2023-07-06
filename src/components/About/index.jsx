@@ -1,11 +1,13 @@
 import Modal from "react-modal";
 import SkillToSpan from "../SkillToSpan";
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 Modal.setAppElement("#root");
 
 export default function About({ page }) {
   const [modalIsOpen, setIsOpen] = useState(false);
+  const mySkill = useRef();
+  const timeLine = gsap.timeline();
 
   const customStyles = {
     content: {
@@ -30,6 +32,58 @@ export default function About({ page }) {
 
   function closeModal() {
     setIsOpen(false);
+    timeLine.kill();
+    gsap.set(".about__skills", { clearProps: true });
+  }
+
+  function afterOpen() {
+    const { y: startY } = mySkill.current.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+    const centerY = windowHeight / 2;
+
+    timeLine
+      .fromTo(
+        ".about__skills",
+        {
+          visibility: "hidden",
+          "--visibility": "visible",
+          "--top": `${startY}px`,
+        },
+        {
+          "--top": `${centerY}px`,
+          "--position": "translate(0, -50%)",
+          duration: 1,
+        }
+      )
+      .to(".about__skills", {
+        opacity: 0,
+        duration: 2,
+      })
+      .from(".ReactModal__Overlay", { opacity: 0, duration: 2 }, "<")
+      .from(".skill-top", {
+        opacity: 0,
+        yPercent: 200,
+        duration: 2,
+        stagger: {
+          each: 1,
+          grid: "auto",
+          from: "end",
+        },
+      })
+      .from(
+        ".skill-bottom",
+        {
+          opacity: 0,
+          yPercent: -200,
+          duration: 2,
+          stagger: {
+            each: 1,
+            grid: "auto",
+            from: "start",
+          },
+        },
+        "<"
+      );
   }
 
   return (
@@ -67,7 +121,7 @@ export default function About({ page }) {
       {page ? (
         ""
       ) : (
-        <h4 onClick={openModal} className="about__skills">
+        <h4 ref={mySkill} onClick={openModal} className="about__skills">
           My
           <span> skills</span>
         </h4>
@@ -75,16 +129,17 @@ export default function About({ page }) {
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
+        onAfterOpen={afterOpen}
         style={customStyles}
       >
-        <div className="modal__skill">
+        <div className="modal__skill skill-top">
           <p>
             {[..."React"].map((letter, index) => (
               <SkillToSpan key={index} props={letter} />
             ))}
           </p>
         </div>
-        <div className="modal__skill">
+        <div className="modal__skill skill-top">
           {" "}
           <p>
             {[..."JavaScript"].map((letter, index) => (
@@ -92,7 +147,7 @@ export default function About({ page }) {
             ))}
           </p>
         </div>
-        <div className="modal__skill">
+        <div className="modal__skill skill-top">
           {" "}
           <p>
             {[..."SASS"].map((letter, index) => (
@@ -105,7 +160,7 @@ export default function About({ page }) {
             My <span> skills</span>
           </p>
         </div>
-        <div className="modal__skill">
+        <div className="modal__skill skill-bottom">
           {" "}
           <p>
             {[..."CSS"].map((letter, index) => (
@@ -113,7 +168,7 @@ export default function About({ page }) {
             ))}
           </p>
         </div>
-        <div className="modal__skill">
+        <div className="modal__skill skill-bottom">
           {" "}
           <p>
             {[..."HTML"].map((letter, index) => (
@@ -121,7 +176,7 @@ export default function About({ page }) {
             ))}
           </p>
         </div>
-        <div className="modal__skill">
+        <div className="modal__skill skill-bottom">
           {" "}
           <p>
             {[..."GreenSock"].map((letter, index) => (

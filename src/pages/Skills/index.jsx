@@ -3,7 +3,6 @@ import { development, tools } from "../../data/skills.json";
 import { devSkills } from "../../data/developmentSkills.json";
 
 export default function Skills() {
-
   return (
     <main>
       <div className="skillsPage">
@@ -18,7 +17,7 @@ export default function Skills() {
               </div>
             ))}
           </div>
-          <DevChart props={devSkills}/>
+          <DevChart props={devSkills} />
         </div>
         <div className="skillsPage__block-tools">
           <h4 className="skillsPage__tools-title">Tools</h4>

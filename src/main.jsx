@@ -9,7 +9,7 @@ import Project from "./pages/Project";
 import Skills from "./pages/Skills";
 import Work from "./pages/Work";
 import Header from "./components/Header";
-import ScrollToTop from "./components/ScrollToTop";
+import ScrollToTop from "./utils/ScrollToTop";
 import "./style/main.scss";
 
 ReactDOM.createRoot(document.getElementById("root")).render(

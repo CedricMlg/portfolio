@@ -37,11 +37,44 @@ export default function About({ page }) {
   }
 
   function afterOpen() {
+    const spans = document.querySelectorAll(".modal__skill p span");
+
+    const spanAnimations = [];
+    spans.forEach((span) => {
+      spanAnimations.push({
+        span,
+        redColorDelay: Math.random() * (4 - 1) + 1,
+        whiteColorDelay: Math.random() * (2.5 - 0.5) + 0.5,
+      });
+    });
+
+    const blinkTimeline = gsap.timeline();
+    spanAnimations.forEach(({ span, redColorDelay, whiteColorDelay }) => {
+      blinkTimeline.set(
+        span,
+        {
+          color: "red",
+          delay: redColorDelay,
+        },
+        0 // make all spans blink at the same time
+      );
+      blinkTimeline.set(
+        span,
+        {
+          color: "white",
+          delay: whiteColorDelay,
+        },
+        redColorDelay // use the same delay to make sure the letter always turn back white
+      );
+    });
+    blinkTimeline.repeat(1).yoyo(true);
+
     const { y: startY } = mySkill.current.getBoundingClientRect();
     const windowHeight = window.innerHeight;
     const centerY = windowHeight / 2;
 
-    timeLine
+    const mainTimeline = gsap.timeline();
+    mainTimeline
       .fromTo(
         ".about__skills",
         {
@@ -57,15 +90,15 @@ export default function About({ page }) {
       )
       .to(".about__skills", {
         opacity: 0,
-        duration: 2,
+        duration: 1,
       })
-      .from(".ReactModal__Overlay", { opacity: 0, duration: 2 }, "<")
+      .from(".ReactModal__Overlay", { opacity: 0, duration: 1 }, "<")
       .from(".skill-top", {
         opacity: 0,
         yPercent: 200,
-        duration: 2,
+        duration: 1,
         stagger: {
-          each: 1,
+          each: 0.5,
           grid: "auto",
           from: "end",
         },
@@ -75,17 +108,17 @@ export default function About({ page }) {
         {
           opacity: 0,
           yPercent: -200,
-          duration: 2,
+          duration: 1,
           stagger: {
-            each: 1,
+            each: 0.5,
             grid: "auto",
             from: "start",
           },
         },
         "<"
       );
+    mainTimeline.add(blinkTimeline);
   }
-
   return (
     <div className="about">
       <h4 className="about__title">

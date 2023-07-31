@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Input from "../Input";
+import MainButton from "../MainButton";
 
 export default function Contact() {
   const form = useRef();
@@ -85,9 +86,9 @@ export default function Contact() {
         ))}
         <textarea name="contact_message" placeholder="Message" />
         <div className="contact__block-submit">
-          <button className="contact__submit" type="submit">
-            Send
-          </button>
+          <MainButton
+            props={{ text: "Send me", hidden: "Your message", type: "submit" }}
+          />
         </div>
       </form>
     </div>

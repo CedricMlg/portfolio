@@ -1,5 +1,6 @@
 import Modal from "react-modal";
 import SkillToSpan from "../SkillToSpan";
+import MainButton from "../MainButton";
 import { useState, useRef } from "react";
 
 Modal.setAppElement("#root");
@@ -43,7 +44,7 @@ export default function About({ page }) {
     spans.forEach((span) => {
       spanAnimations.push({
         span,
-        redColorDelay: Math.random() * (4 - 1) + 1,
+        redColorDelay: Math.random() * (5 - 1) + 1,
         whiteColorDelay: Math.random() * (2.5 - 0.5) + 0.5,
       });
     });
@@ -67,7 +68,7 @@ export default function About({ page }) {
         redColorDelay // use the same delay to make sure the letter always turn back white
       );
     });
-    blinkTimeline.repeat(1).yoyo(true);
+    // blinkTimeline.repeat(1).yoyo(true);
 
     const { y: startY } = mySkill.current.getBoundingClientRect();
     const windowHeight = window.innerHeight;
@@ -116,8 +117,39 @@ export default function About({ page }) {
           },
         },
         "<"
-      );
-    mainTimeline.add(blinkTimeline);
+      )
+      .add(blinkTimeline)
+      .to(".skill-top", {
+        opacity: 0,
+        yPercent: 200,
+        duration: 1,
+        stagger: {
+          each: 0.5,
+          grid: "auto",
+          from: "start",
+        },
+      })
+      .to(
+        ".skill-bottom",
+        {
+          opacity: 0,
+          yPercent: -200,
+          duration: 1,
+          stagger: {
+            each: 0.5,
+            grid: "auto",
+            from: "end",
+          },
+        },
+        "<"
+      )
+      .to(".modal__title p", {
+        duration: 2,
+        xPercent: 300,
+      })
+      .set(".modal__title p", {
+        display: "none",
+      });
   }
   return (
     <div className="about">

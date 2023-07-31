@@ -1,6 +1,7 @@
 import About from "../../components/About";
 import Contact from "../../components/Contact";
 import Work from "../../components/Work";
+import MainButton from "../../components/MainButton";
 import { useNavigate } from "react-router-dom";
 
 export default function Home() {
@@ -21,9 +22,7 @@ export default function Home() {
             <h2>Web developer</h2>
             <h3>Front-End Developer</h3>
           </div>
-          <button className="home__contact" type="button" onClick={routeChange}>
-            Let&apos;s talk
-          </button>
+          <MainButton props={{text:"Let's", hidden:"talk", type:"button"}} handleClick={routeChange}/>
         </div>
       </div>
       <About page={false} />

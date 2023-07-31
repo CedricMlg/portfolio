@@ -1,0 +1,57 @@
+.main-button {
+  position: relative;
+  overflow: hidden;
+  border: solid 3px black;
+  display: inline-block;
+  font-size: 15px;
+  padding: 18px 18px 17px;
+  text-decoration: none;
+  cursor: pointer;
+  background: $third-color;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  & span {
+    &:first-child {
+      position: relative;
+      padding: 0 18px;
+      transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+      z-index: 1;
+    }
+    &:last-child {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+      z-index: 2;
+      opacity: 0;
+      top: 64%;
+      left: 50%;
+      transform: translateY(225%) translateX(-50%);
+      height: fit-content;
+    }
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transform-origin: bottom center;
+    transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+    transform: skewY(10deg) scaleY(0);
+  }
+  &:hover {
+    &:after {
+      transform-origin: bottom center;
+      transform: skewY(10deg) scaleY(2);
+    }
+    & span:last-child {
+      transform: translateX(-50%) translateY(-80%);
+      opacity: 1;
+      transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+    }
+  }
+}

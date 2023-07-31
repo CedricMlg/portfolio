@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { ReactComponent as Github } from "../../assets/github.svg";
 import { ReactComponent as LinkedIn } from "../../assets/linkedin.svg";
-import logo from "../../assets/logo.png";
+import { ReactComponent as Logo } from "../../assets/logo.svg";
 
 export default function Header() {
   function GoTop() {
@@ -12,7 +12,7 @@ export default function Header() {
     <header>
       <div className="header">
         <Link onClick={GoTop} to={"/"}>
-          <img className="header__logo" src={logo} alt=""></img>
+          <Logo className="header__logo" />
         </Link>
         <nav className="header__nav">
           <ul className="header__nav-app">
@@ -33,10 +33,17 @@ export default function Header() {
         <nav className="header__nav">
           <ul className="header__nav-socials">
             <li className="socials">
-              <Github />
+              <a href="https://github.com/CedricMlg" target="_blank">
+                <Github />
+              </a>
             </li>
             <li className="socials">
-              <LinkedIn />
+              <a
+                href="https://www.linkedin.com/in/c%C3%A9dric-malingre-7a1a9821a/"
+                target="_blank"
+              >
+                <LinkedIn />
+              </a>
             </li>
           </ul>
         </nav>

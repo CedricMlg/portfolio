@@ -1,3 +1,13 @@
+.modal__button {
+  display: none;
+  width: fit-content;
+  position: absolute;
+  opacity: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .close-modal {
   z-index: 1;
   position: absolute;

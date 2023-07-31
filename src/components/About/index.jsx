@@ -2,6 +2,7 @@ import Modal from "react-modal";
 import SkillToSpan from "../SkillToSpan";
 import MainButton from "../MainButton";
 import { useState, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 
 Modal.setAppElement("#root");
 
@@ -9,6 +10,11 @@ export default function About({ page }) {
   const [modalIsOpen, setIsOpen] = useState(false);
   const mySkill = useRef();
   const timeLine = gsap.timeline();
+  let navigate = useNavigate();
+  const routeChange = () => {
+    let path = `/skills`;
+    navigate(path);
+  };
 
   const customStyles = {
     content: {
@@ -54,7 +60,7 @@ export default function About({ page }) {
       blinkTimeline.set(
         span,
         {
-          color: "red",
+          color: "var(--main-color)",
           delay: redColorDelay,
         },
         0 // make all spans blink at the same time
@@ -143,11 +149,26 @@ export default function About({ page }) {
         },
         "<"
       )
+      .set(".modal__skill", {
+        display: "none",
+      })
       .to(".modal__title p", {
         duration: 2,
-        xPercent: 300,
+        yPercent: -400,
       })
-      .set(".modal__title p", {
+      .to(
+        ".modal__button",
+        {
+          duration: 3,
+          opacity: 1,
+          display: "block",
+        },
+        "-=1"
+      )
+      .to(".modal__title p", {
+        duration: 2,
+        yPercent: -200,
+        opacity: 0,
         display: "none",
       });
   }
@@ -224,6 +245,13 @@ export default function About({ page }) {
           <p>
             My <span> skills</span>
           </p>
+        </div>
+        <div className="modal__button">
+          {" "}
+          <MainButton
+            props={{ text: "See", hidden: "More", type: "button" }}
+            handleClick={routeChange}
+          />
         </div>
         <div className="modal__skill skill-bottom">
           {" "}

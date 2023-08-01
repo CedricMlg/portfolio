@@ -93,6 +93,7 @@ export default function About({ page }) {
           "--top": `${centerY}px`,
           "--position": "translate(0, -50%)",
           duration: 1,
+          ease: Power1.easeOut,
         }
       )
       .to(".about__skills", {
@@ -103,7 +104,8 @@ export default function About({ page }) {
       .from(".skill-top", {
         opacity: 0,
         yPercent: 200,
-        duration: 1,
+        duration: 1.5,
+        ease: Power1.easeOut,
         stagger: {
           each: 0.5,
           grid: "auto",
@@ -115,7 +117,8 @@ export default function About({ page }) {
         {
           opacity: 0,
           yPercent: -200,
-          duration: 1,
+          duration: 1.5,
+          ease: Power1.easeOut,
           stagger: {
             each: 0.5,
             grid: "auto",
@@ -128,7 +131,8 @@ export default function About({ page }) {
       .to(".skill-top", {
         opacity: 0,
         yPercent: 200,
-        duration: 1,
+        duration: 1.5,
+        ease: Power2.easeOut,
         stagger: {
           each: 0.5,
           grid: "auto",
@@ -140,7 +144,8 @@ export default function About({ page }) {
         {
           opacity: 0,
           yPercent: -200,
-          duration: 1,
+          duration: 1.5,
+          ease: Power2.easeOut,
           stagger: {
             each: 0.5,
             grid: "auto",
@@ -155,6 +160,7 @@ export default function About({ page }) {
       .to(".modal__title p", {
         duration: 2,
         yPercent: -400,
+        ease: Power2.easeOut,
       })
       .to(
         ".modal__button",
@@ -166,10 +172,11 @@ export default function About({ page }) {
         "-=1"
       )
       .to(".modal__title p", {
-        duration: 2,
+        duration: 1,
         yPercent: -200,
         opacity: 0,
         display: "none",
+        ease: Power2.easeOut,
       });
   }
   return (

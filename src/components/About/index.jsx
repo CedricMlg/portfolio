@@ -9,7 +9,8 @@ Modal.setAppElement("#root");
 export default function About({ page }) {
   const [modalIsOpen, setIsOpen] = useState(false);
   const mySkill = useRef();
-  const timeLine = gsap.timeline();
+  const mainTimeline = gsap.timeline();
+  const blinkTimeline = gsap.timeline();
   let navigate = useNavigate();
   const routeChange = () => {
     let path = `/skills`;
@@ -39,7 +40,7 @@ export default function About({ page }) {
 
   function closeModal() {
     setIsOpen(false);
-    timeLine.kill();
+    mainTimeline.kill();
     gsap.set(".about__skills", { clearProps: true });
   }
 
@@ -55,7 +56,6 @@ export default function About({ page }) {
       });
     });
 
-    const blinkTimeline = gsap.timeline();
     spanAnimations.forEach(({ span, redColorDelay, whiteColorDelay }) => {
       blinkTimeline.set(
         span,
@@ -74,13 +74,12 @@ export default function About({ page }) {
         redColorDelay // use the same delay to make sure the letter always turn back white
       );
     });
-    // blinkTimeline.repeat(1).yoyo(true);
+    blinkTimeline.repeat(1).yoyo(true);
 
     const { y: startY } = mySkill.current.getBoundingClientRect();
     const windowHeight = window.innerHeight;
     const centerY = windowHeight / 2;
 
-    const mainTimeline = gsap.timeline();
     mainTimeline
       .fromTo(
         ".about__skills",

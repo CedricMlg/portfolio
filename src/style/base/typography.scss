@@ -86,8 +86,13 @@
     line-height: 100px;
     color: #ffffff;
     text-align: center;
+    text-decoration: underline;
+    transition: text-decoration-color 400ms;
     & span {
       color: $main-color;
+    }
+    &:hover {
+      text-decoration-color: rgba(255, 255, 255, 0);
     }
   }
 }

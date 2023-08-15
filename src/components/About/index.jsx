@@ -204,7 +204,7 @@ export default function About({ page }) {
           <p className="about__description">
             My <span>dream job</span> is a job where I can live off my{" "}
             <span>passion</span> for development and work in a{" "}
-            <span>good atmosphere</span> with colleagues I like.
+            <span>good atmosphere</span> with great colleagues.
           </p>
         ) : (
           ""

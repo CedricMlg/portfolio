@@ -2,6 +2,7 @@ import About from "../../components/About";
 import Contact from "../../components/Contact";
 import Work from "../../components/Work";
 import MainButton from "../../components/MainButton";
+import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function Home() {
@@ -12,7 +13,7 @@ export default function Home() {
     navigate(path);
   };
 
-  window.onload = function () {
+  useEffect(() => {
     mainTimeline
       .from(".home__name h1 span", {
         opacity: 0,
@@ -84,7 +85,7 @@ export default function Home() {
         },
         "<"
       );
-  };
+  }, []);
 
   return (
     <main>

@@ -1,7 +1,7 @@
 import Modal from "react-modal";
 import SkillToSpan from "../SkillToSpan";
 import MainButton from "../MainButton";
-import { useState, useRef } from "react";
+import { useEffect, useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 
 Modal.setAppElement("#root");
@@ -178,6 +178,42 @@ export default function About({ page }) {
         ease: Power2.easeOut,
       });
   }
+
+  window.onload = function () {
+    gsap.from(".about__title", {
+      scrollTrigger: {
+        trigger: ".about__title",
+        markers: true,
+        start: "bottom 80%",
+      },
+      opacity: 0,
+      yPercent: -70,
+      duration: 1.3,
+    });
+    gsap.from(".about__description", {
+      scrollTrigger: {
+        trigger: ".about__description",
+        markers: true,
+        start: "200% 80%",
+      },
+      opacity: 0,
+      duration: 1.3,
+      stagger: {
+        each: 0.8,
+      },
+    });
+    gsap.from(".about__skills", {
+      scrollTrigger: {
+        trigger: ".about__skills",
+        markers: true,
+        start: "-110% 80%",
+      },
+      opacity: 0,
+      yPercent: 70,
+      duration: 1.3,
+    });
+  };
+
   return (
     <div className="about">
       <h4 className="about__title">

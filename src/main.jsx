@@ -13,19 +13,17 @@ import ScrollToTop from "./utils/ScrollToTop";
 import "./style/main.scss";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <Router>
-      <ScrollToTop />
-      <Header />
-      <Routes>
-        <Route exact path="/about" element={<About />} />
-        <Route exact path="/contact" element={<Contact />} />
-        <Route exact path="*" element={<Error />} />
-        <Route exact path="/" element={<Home />} />
-        <Route exact path="/project/:id" element={<Project />} />
-        <Route exact path="/skills" element={<Skills />} />
-        <Route exact path="/work" element={<Work />} />
-      </Routes>
-    </Router>
-  </React.StrictMode>
+  <Router>
+    <ScrollToTop />
+    <Header />
+    <Routes>
+      <Route exact path="/about" element={<About />} />
+      <Route exact path="/contact" element={<Contact />} />
+      <Route exact path="*" element={<Error />} />
+      <Route exact path="/" element={<Home />} />
+      <Route exact path="/project/:id" element={<Project />} />
+      <Route exact path="/skills" element={<Skills />} />
+      <Route exact path="/work" element={<Work />} />
+    </Routes>
+  </Router>
 );

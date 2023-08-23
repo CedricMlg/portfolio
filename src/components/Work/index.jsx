@@ -2,6 +2,7 @@ import ProjectCard from "../ProjectCard";
 import { projects } from "../../data/projects.json";
 
 export default function Work({ page }) {
+
   return (
     <div className="work">
       {page ? (

@@ -2,6 +2,7 @@ import About from "../../components/About";
 import Contact from "../../components/Contact";
 import Work from "../../components/Work";
 import MainButton from "../../components/MainButton";
+import ScrollTriggers from "../../utils/ScrollTriggers";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -12,6 +13,7 @@ export default function Home() {
     let path = `/contact`;
     navigate(path);
   };
+  ScrollTriggers();
 
   useEffect(() => {
     mainTimeline
@@ -78,10 +80,10 @@ export default function Home() {
         duration: 1.3,
       })
       .from(
-        ".main-button",
+        ".home .main-button",
         {
           opacity: 0,
-          duration: 1.3,
+          duration: 2,
         },
         "<"
       );

@@ -84,7 +84,7 @@ export default function Contact() {
             // onChange={onChange}
           />
         ))}
-        <textarea name="contact_message" placeholder="Message" />
+        <div><textarea name="contact_message" placeholder="Message" /></div>
         <div className="contact__block-submit">
           <MainButton
             props={{ text: "Send me", hidden: "Your message", type: "submit" }}

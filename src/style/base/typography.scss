@@ -9,6 +9,10 @@
       text-align: center;
       text-decoration: none;
       color: #ffffff;
+      transition: all 0.4s;
+      &:hover {
+        text-shadow: $main-color 3px 2px;
+      }
     }
   }
 }

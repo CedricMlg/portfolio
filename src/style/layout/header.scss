@@ -42,5 +42,9 @@
     height: 40px;
     width: 40px;
     fill: white;
+    transition: all 0.3s;
+  }
+  & svg:hover {
+    filter: drop-shadow(3px 2px $main-color);
   }
 }

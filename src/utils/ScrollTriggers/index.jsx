@@ -71,10 +71,10 @@ export default function ScrollTriggers() {
         start: "30% 80%",
       },
       stagger: {
-        each: 0.8,
+        each: 0.6,
       },
       opacity: 0,
-      duration: 1.3,
+      duration: 0.8,
     });
   };
 }

@@ -10,6 +10,14 @@
     grid-template-columns: repeat(3, fit-content(400px));
     grid-template-rows: repeat(20, 50px);
     grid-column-gap: 200px;
+    & div {
+      border-radius: 200px;
+      overflow: visible;
+      &:hover {
+        scale: 1.02;
+        box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.452);
+      }
+    }
     & :nth-child(1) {
       grid-column: 1;
       grid-row: 1 / 9;

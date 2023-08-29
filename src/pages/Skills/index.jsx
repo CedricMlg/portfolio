@@ -1,8 +1,16 @@
 import DevChart from "../../components/RadarChart";
 import { development, tools } from "../../data/skills.json";
 import { devSkills } from "../../data/developmentSkills.json";
+import { useEffect } from "react";
 
 export default function Skills() {
+  useEffect(() => {
+    gsap.from(".skillsPage", {
+      opacity: 0,
+      duration: 1.5,
+    });
+  }, []);
+
   return (
     <main>
       <div className="skillsPage">

@@ -13,6 +13,7 @@
     & div {
       border-radius: 200px;
       overflow: visible;
+      transition: all 0.3s;
       &:hover {
         scale: 1.02;
         box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.452);

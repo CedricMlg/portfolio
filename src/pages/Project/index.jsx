@@ -7,6 +7,7 @@ import { ReactComponent as Arrow } from "../../assets/arrow.svg";
 import { ReactComponent as Cross } from "../../assets/cross.svg";
 import Carousel from "../../components/Carousel";
 import Modal from "react-modal";
+import { useEffect } from "react";
 
 Modal.setAppElement("#root");
 
@@ -27,6 +28,31 @@ export default function Project() {
       inset: "40px 40px 60px 50%",
     },
   };
+
+  const mainTimeline = gsap.timeline();
+
+  useEffect(() => {
+    mainTimeline
+      .from(".projectPage__title", {
+        opacity: 0,
+        ease: Power1.easeOut,
+        yPercent: -70,
+        duration: 0.9,
+      })
+      .from(".projectPage__block-ds", {
+        opacity: 0,
+        ease: Power1.easeOut,
+        duration: 0.7,
+      })
+      .from(".projectPage__block-right div", {
+        opacity: 0,
+        ease: Power1.easeOut,
+        duration: 0.8,
+        stagger: {
+          each: .6,
+        },
+      });
+  }, []);
 
   function openModal() {
     setIsOpen(true);

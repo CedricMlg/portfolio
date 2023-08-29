@@ -6,6 +6,7 @@ export default function ScrollTriggers() {
         start: "bottom 80%",
       },
       opacity: 0,
+      ease: Power1.easeOut,
       yPercent: -70,
       duration: 1.3,
     });
@@ -15,6 +16,7 @@ export default function ScrollTriggers() {
         start: "200% 80%",
       },
       opacity: 0,
+      ease: Power1.easeOut,
       duration: 1.3,
       stagger: {
         each: 0.8,
@@ -26,6 +28,7 @@ export default function ScrollTriggers() {
         start: "-110% 80%",
       },
       opacity: 0,
+      ease: Power1.easeOut,
       duration: 1.3,
     });
     gsap.from(".work__title", {
@@ -34,6 +37,7 @@ export default function ScrollTriggers() {
         start: "bottom 80%",
       },
       opacity: 0,
+      ease: Power1.easeOut,
       yPercent: -70,
       duration: 1.3,
     });
@@ -43,6 +47,7 @@ export default function ScrollTriggers() {
         start: "100% 80%",
       },
       opacity: 0,
+      ease: Power1.easeOut,
       duration: 1.3,
       stagger: {
         each: 0.8,
@@ -54,6 +59,7 @@ export default function ScrollTriggers() {
         start: "bottom 80%",
       },
       opacity: 0,
+      ease: Power1.easeOut,
       yPercent: -70,
       duration: 1.3,
     });
@@ -63,6 +69,7 @@ export default function ScrollTriggers() {
         start: "200% 80%",
       },
       opacity: 0,
+      ease: Power1.easeOut,
       duration: 1.3,
     });
     gsap.from(".contact__form div", {
@@ -70,11 +77,12 @@ export default function ScrollTriggers() {
         trigger: ".contact__form",
         start: "30% 80%",
       },
+      opacity: 0,
+      ease: Power1.easeOut,
+      duration: 0.8,
       stagger: {
         each: 0.6,
       },
-      opacity: 0,
-      duration: 0.8,
     });
   };
 }

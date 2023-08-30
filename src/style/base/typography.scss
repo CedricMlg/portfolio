@@ -241,9 +241,6 @@
     & svg:nth-child(1) {
       fill: white;
       transition: all 0.3s;
-      &:hover {
-        filter: drop-shadow(3px 2px $main-color);
-      }
     }
     &-text {
       font-family: $main-font, sans-serif;

@@ -49,10 +49,30 @@ export default function Project() {
         ease: Power1.easeOut,
         duration: 0.8,
         stagger: {
-          each: .6,
+          each: 0.6,
         },
       });
   }, []);
+
+  const onMouseEnter = ({ currentTarget }) => {
+    let q = gsap.utils.selector(currentTarget);
+
+    gsap.to(q(".projectPage__block-check svg:nth-child(3)"), {
+      xPercent: 60,
+      repeat: -1,
+      yoyo: true,
+    });
+  };
+
+  const onMouseLeave = ({ currentTarget }) => {
+    let q = gsap.utils.selector(currentTarget);
+
+    gsap.killTweensOf(q(".projectPage__block-check svg:nth-child(3)"));
+
+    gsap.to(q(".projectPage__block-check svg:nth-child(3)"), {
+      xPercent: 0,
+    });
+  };
 
   function openModal() {
     setIsOpen(true);
@@ -109,6 +129,8 @@ export default function Project() {
               ""
             ) : (
               <a
+                onMouseEnter={onMouseEnter}
+                onMouseLeave={onMouseLeave}
                 href={project.live}
                 target="_blank"
                 className="projectPage__check"
@@ -119,6 +141,8 @@ export default function Project() {
               </a>
             )}
             <a
+              onMouseEnter={onMouseEnter}
+              onMouseLeave={onMouseLeave}
               href={project.github}
               target="_blank"
               className="projectPage__check"

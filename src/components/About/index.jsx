@@ -1,8 +1,8 @@
+import { useState, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import Modal from "react-modal";
 import SkillToSpan from "../SkillToSpan";
 import MainButton from "../MainButton";
-import { useState, useRef } from "react";
-import { useNavigate } from "react-router-dom";
 
 Modal.setAppElement("#root");
 
@@ -74,7 +74,7 @@ export default function About({ page }) {
         redColorDelay // use the same delay to make sure the letter always turn back white
       );
     });
-    blinkTimeline.repeat(1).yoyo(true);
+    // blinkTimeline.repeat(1).yoyo(true);
 
     const { y: startY } = mySkill.current.getBoundingClientRect();
     const windowHeight = window.innerHeight;

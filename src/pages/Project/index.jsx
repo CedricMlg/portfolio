@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { projects } from "../../data/projects.json";
 import { useParams } from "react-router-dom";
 import { ReactComponent as Github } from "../../assets/github.svg";
@@ -7,7 +7,6 @@ import { ReactComponent as Arrow } from "../../assets/arrow.svg";
 import { ReactComponent as Cross } from "../../assets/cross.svg";
 import Carousel from "../../components/Carousel";
 import Modal from "react-modal";
-import { useEffect } from "react";
 
 Modal.setAppElement("#root");
 
@@ -51,7 +50,16 @@ export default function Project() {
         stagger: {
           each: 0.6,
         },
-      });
+      })
+      .to(
+        ".projectPage__picture",
+        {
+          opacity: 1,
+          duration: 1.4,
+          delay: 0.33,
+        },
+        "<"
+      );
   }, []);
 
   const onMouseEnter = ({ currentTarget }) => {

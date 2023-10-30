@@ -1,5 +1,5 @@
-import AboutComp from "../../components/About";
 import { useEffect } from "react";
+import AboutComp from "../../components/About";
 
 export default function About() {
   const mainTimeline = gsap.timeline();

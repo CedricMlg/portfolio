@@ -1,5 +1,5 @@
-import WorkComp from "../../components/Work";
 import { useEffect } from "react";
+import WorkComp from "../../components/Work";
 
 export default function Work() {
   useEffect(() => {

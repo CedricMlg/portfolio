@@ -1,7 +1,7 @@
+import { useEffect } from "react";
 import DevChart from "../../components/RadarChart";
 import { development, tools } from "../../data/skills.json";
 import { devSkills } from "../../data/developmentSkills.json";
-import { useEffect } from "react";
 
 export default function Skills() {
   useEffect(() => {

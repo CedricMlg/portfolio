@@ -1,5 +1,5 @@
-import ContactComp from "../../components/Contact";
 import { useEffect } from "react";
+import ContactComp from "../../components/Contact";
 
 export default function Contact() {
   const mainTimeline = gsap.timeline();

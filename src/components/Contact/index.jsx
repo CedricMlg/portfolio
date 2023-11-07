@@ -5,10 +5,7 @@ import MainButton from "../MainButton";
 
 export default function Contact() {
   const form = useRef();
-  // const [values, setValues] = useState({
-  //   contact_name: "",
-  //   contact_email: "",
-  // });
+  const [text, setText] = useState("");
 
   const inputs = [
     {
@@ -48,20 +45,18 @@ export default function Contact() {
         "q52InBS1JcWCiJewo"
       )
       .then(
-        (result) => {
-          console.log(result.text);
+        () => {
+          setText("Your message was successfully sent");
+          e.target[0].setAttribute("focused", "false");
+          e.target[1].setAttribute("focused", "false");
         },
-        (error) => {
-          console.log(error.text);
+        () => {
+          setText("Your message could not be sent, try again later");
         }
       );
 
-    form.reset();
+    e.target.reset();
   };
-
-  // const onChange = (e) => {
-  //   setValues({ ...values, [e.target.name]: e.target.value });
-  // };
 
   return (
     <div className="contact">
@@ -77,15 +72,13 @@ export default function Contact() {
       </div>
       <form className="contact__form" ref={form} onSubmit={sendEmail}>
         {inputs.map((input) => (
-          <Input
-            key={input.id}
-            {...input}
-            // value={values[input.name]}
-            // onChange={onChange}
-          />
+          <Input key={input.id} {...input} />
         ))}
-        <div><textarea name="contact_message" placeholder="Message" /></div>
+        <div>
+          <textarea name="contact_message" placeholder="Message" />
+        </div>
         <div className="contact__block-submit">
+          <p className="contact__submit-text">{text}</p>
           <MainButton
             props={{ text: "Send me", hidden: "Your message", type: "submit" }}
           />

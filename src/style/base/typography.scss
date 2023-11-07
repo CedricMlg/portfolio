@@ -8,7 +8,7 @@
       line-height: 42px;
       text-align: center;
       text-decoration: none;
-      color: #ffffff;
+      color: $fourth-color;
       transition: all 0.4s;
       &:hover {
         text-shadow: $main-color 3px 2px;
@@ -25,7 +25,7 @@
       font-weight: 400;
       font-size: 96px;
       line-height: 112px;
-      color: #ffffff;
+      color: $fourth-color;
     }
   }
   &__job {
@@ -43,7 +43,7 @@
       font-weight: 400;
       font-size: 50px;
       line-height: 59px;
-      color: #ffffff;
+      color: $fourth-color;
     }
     &-bar {
       color: white;
@@ -56,7 +56,7 @@
     font-size: 35px;
     line-height: 41px;
     text-align: center;
-    color: #ffffff;
+    color: $fourth-color;
   }
 }
 
@@ -67,7 +67,7 @@
     font-weight: 400;
     font-size: 80px;
     line-height: 94px;
-    color: #ffffff;
+    color: $fourth-color;
     & span {
       color: $main-color;
     }
@@ -79,7 +79,7 @@
       font-weight: 400;
       font-size: 40px;
       line-height: 55px;
-      color: #ffffff;
+      color: $fourth-color;
       & span {
         color: $main-color;
       }
@@ -91,7 +91,7 @@
     font-weight: 400;
     font-size: 100px;
     line-height: 100px;
-    color: #ffffff;
+    color: $fourth-color;
     text-align: center;
     text-decoration: underline;
     transition: text-decoration-color 400ms;
@@ -111,7 +111,7 @@
     font-weight: 400;
     font-size: 80px;
     line-height: 94px;
-    color: #ffffff;
+    color: $fourth-color;
     & span {
       color: $main-color;
     }
@@ -137,7 +137,7 @@
       font-weight: 400;
       font-size: 40px;
       line-height: 47px;
-      color: #ffffff;
+      color: $fourth-color;
       & span {
         color: $main-color;
       }
@@ -171,7 +171,18 @@
     font-size: 35px;
     line-height: 41px;
     text-align: center;
-    color: #ffffff;
+    color: $fourth-color;
+    &-text {
+      font-family: $main-font, sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 35px;
+      line-height: 0;
+      color: $fourth-color;
+      text-decoration: underline;
+      text-decoration-color: $main-color;
+      text-underline-offset: 6px;
+    }
   }
 }
 
@@ -187,7 +198,7 @@
     font-weight: 400;
     font-size: 80px;
     line-height: 94px;
-    color: #ffffff;
+    color: $fourth-color;
   }
   &__block {
     &-description {
@@ -197,7 +208,7 @@
         font-weight: 400;
         font-size: 48px;
         line-height: 56px;
-        color: #ffffff;
+        color: $fourth-color;
       }
     }
     &-skills {
@@ -207,7 +218,7 @@
         font-weight: 400;
         font-size: 48px;
         line-height: 56px;
-        color: #ffffff;
+        color: $fourth-color;
       }
     }
   }
@@ -218,7 +229,7 @@
     font-size: 64px;
     line-height: 75px;
 
-    color: #ffffff;
+    color: $fourth-color;
   }
   &__description {
     font-family: $main-font, sans-serif;
@@ -226,7 +237,7 @@
     font-weight: 400;
     font-size: 28px;
     line-height: 40px;
-    color: #ffffff;
+    color: $fourth-color;
   }
   &__skill {
     font-family: $main-font, sans-serif;
@@ -234,12 +245,12 @@
     font-weight: 400;
     font-size: 22px;
     line-height: 30px;
-    color: #ffffff;
+    color: $fourth-color;
   }
   &__check {
     text-decoration: none;
     & svg:nth-child(1) {
-      fill: white;
+      fill: $fourth-color;
       transition: all 0.3s;
     }
     &-text {
@@ -251,7 +262,7 @@
       color: #ffffff;
     }
     & svg:nth-child(3) {
-      fill: white;
+      fill: $fourth-color;
     }
   }
 }
@@ -276,7 +287,7 @@
     font-weight: 400;
     font-size: 280px;
     line-height: 142.6%;
-    color: #ffffff;
+    color: $fourth-color;
   }
   & p {
     font-family: $main-font, sans-serif;
@@ -284,7 +295,7 @@
     font-weight: 400;
     font-size: 40px;
     line-height: 47px;
-    color: #ffffff;
+    color: $fourth-color;
     & span {
       color: $main-color;
     }
@@ -297,7 +308,7 @@
     line-height: 42px;
     text-align: center;
     text-decoration: none;
-    color: #ffffff;
+    color: $fourth-color;
   }
 }
 
@@ -312,7 +323,7 @@
         line-height: 40px;
         text-align: center;
         text-decoration: none;
-        color: #ffffff;
+        color: $fourth-color;
       }
     }
     &-tools {
@@ -324,7 +335,7 @@
         line-height: 40px;
         text-align: center;
         text-decoration: none;
-        color: #ffffff;
+        color: $fourth-color;
       }
     }
   }
@@ -335,7 +346,7 @@
       font-weight: 400;
       font-size: 34px;
       line-height: 47px;
-      color: #ffffff;
+      color: $fourth-color
     }
   }
 }
@@ -347,7 +358,7 @@
     font-weight: 400;
     font-size: 26px;
     line-height: 40px;
-    fill: #ffffff;
+    fill: $fourth-color;
   }
 }
 
@@ -358,7 +369,7 @@
     font-weight: 400;
     font-size: 100px;
     line-height: 30px;
-    color: #ffffff;
+    color: $fourth-color;
     text-align: center;
     & span {
       color: $main-color;
@@ -370,7 +381,7 @@
     font-weight: 400;
     font-size: 100px;
     line-height: 30px;
-    color: #ffffff;
+    color: $fourth-color;
     text-align: center;
   }
 }
@@ -378,7 +389,7 @@
 .main-button {
   & span {
     &:first-child {
-      color: white;
+      color: $fourth-color;
       font-family: $main-font, sans-serif;
       font-style: normal;
       font-weight: 400;

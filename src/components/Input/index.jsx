@@ -12,7 +12,6 @@ export default function Input(props) {
     <div className="formInput">
       <input
         {...inputProps}
-        // onChange={onChange}
         onBlur={handleFocus}
         focused={focused.toString()}
       />

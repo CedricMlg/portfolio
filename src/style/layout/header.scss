@@ -41,7 +41,7 @@
     cursor: pointer;
     height: 40px;
     width: 40px;
-    fill: white;
+    fill: $fourth-color;
     transition: all 0.3s;
     &:hover {
       filter: drop-shadow(3px 2px $main-color);

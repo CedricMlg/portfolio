@@ -18,14 +18,16 @@
 }
 
 .home {
-  &__name {
-    & h1 {
-      font-family: $main-font, sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 96px;
-      line-height: 112px;
-      color: $fourth-color;
+  &__block {
+    &-top {
+      & h1 {
+        font-family: $main-font, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 96px;
+        line-height: 112px;
+        color: $fourth-color;
+      }
     }
   }
   &__job {
@@ -346,7 +348,7 @@
       font-weight: 400;
       font-size: 34px;
       line-height: 47px;
-      color: $fourth-color
+      color: $fourth-color;
     }
   }
 }

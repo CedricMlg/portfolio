@@ -51,7 +51,7 @@ export default function About({ page }) {
     spans.forEach((span) => {
       spanAnimations.push({
         span,
-        redColorDelay: Math.random() * (5 - 1) + 1,
+        redColorDelay: Math.random() * (5 - 1) + 0,
         whiteColorDelay: Math.random() * (2.5 - 0.5) + 0.5,
       });
     });
@@ -170,13 +170,13 @@ export default function About({ page }) {
         },
         "-=1"
       )
-      .to(".modal__title p", {
-        duration: 1,
-        yPercent: -200,
-        opacity: 0,
-        display: "none",
-        ease: Power2.easeOut,
-      });
+      // .to(".modal__title p", {
+      //   duration: 1,
+      //   yPercent: -200,
+      //   opacity: 0,
+      //   display: "none",
+      //   ease: Power2.easeOut,
+      // });
   }
 
   return (

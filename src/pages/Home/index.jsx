@@ -17,7 +17,7 @@ export default function Home() {
 
   useEffect(() => {
     mainTimeline
-      .from(".home__name h1 span", {
+      .from(".home__block-top h1 span", {
         opacity: 0,
         xPercent: -70,
         duration: 1.3,
@@ -44,7 +44,7 @@ export default function Home() {
         {
           opacity: 0,
         },
-        "+=0.6"
+        "+=0.1"
       )
       .set(
         ".home__job-bar",
@@ -92,10 +92,13 @@ export default function Home() {
   return (
     <main>
       <div className="home">
-        <div className="home__name">
+        <div className="home__block-top">
           <h1>
             <span>Cédric</span>&nbsp;<span>Malingre</span>
           </h1>
+          <div className="home__picture">
+            <img src="/me.png" alt="" />
+          </div>
         </div>
         <div className="home__block-bottom">
           <div className="home__job">

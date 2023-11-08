@@ -1,25 +1,38 @@
 .home {
-  &__name {
-    & h1 {
-      margin: 0;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: flex-end;
-      padding-top: 280px;
-      height: 230px;
-      width: 400px;
-    }
-  }
   &__block {
+    &-top {
+      display: flex;
+      justify-content: space-between;
+      & h1 {
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        padding-top: 280px;
+        height: 230px;
+        width: 400px;
+      }
+    }
     &-bottom {
       display: flex;
       align-items: flex-end;
       justify-content: space-between;
+      margin-top: 100px;
+    }
+  }
+  &__picture {
+    width: 850px;
+    height: 100%;
+    margin-top: 100px;
+    & img {
+      width: 100%;
+      height: 100%;
+      rotate:180deg;
     }
   }
   &__job {
     & h2 {
-      margin: 180px 0 0 0;
+      margin: 0;
     }
     & h3 {
       margin: 40px 0 0 0;

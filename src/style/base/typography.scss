@@ -410,3 +410,34 @@
     }
   }
 }
+
+@media (max-width: 960px) { 
+  .home {
+    &__block {
+      &-top {
+        & h1 {
+          font-size: 78px;
+          line-height: 85px;
+        }
+      }
+    }
+    &__job {
+      & h2 {
+        font-size: 68px;
+      }
+      & h3 {
+        font-size: 48px;
+      }
+    }
+  }
+}
+
+@media (max-width: 860px) { 
+  .home {
+    &__job {
+      & h2 {
+        font-size: 65px;
+      }
+    }
+  }
+}

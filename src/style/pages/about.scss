@@ -4,3 +4,19 @@
     padding-top: 160px;
   }
 }
+
+@media (max-width: 1270px) { 
+  .aboutPage {
+    .about {
+      padding-top: 180px;
+    }
+  }
+}
+
+@media (max-width: 860px) { 
+  .aboutPage {
+    .about {
+      padding-top: 270px;
+    }
+  }
+}

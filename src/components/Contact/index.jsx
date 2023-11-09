@@ -68,7 +68,7 @@ export default function Contact() {
           I&apos;m actively looking for full time job opportunities as a{" "}
           <span>Front-End Developer</span>.
         </p>
-        <p>But if you have any request or question you know what to do !</p>
+        <p>If you have any request or question you know what to do !</p>
       </div>
       <form className="contact__form" ref={form} onSubmit={sendEmail}>
         {inputs.map((input) => (

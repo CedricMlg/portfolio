@@ -1,7 +1,7 @@
 .header {
   background-color: $third-color;
   position: fixed;
-  width: 89.271%;
+  width: -webkit-fill-available;
   height: 100px;
   padding: 0 100px;
   display: flex;
@@ -18,7 +18,7 @@
     flex-direction: row;
     & ul {
       display: flex;
-      flex-direction: row;
+      // flex-direction: row;
       justify-content: space-between;
       list-style: none;
       margin: 0;
@@ -45,6 +45,56 @@
     transition: all 0.3s;
     &:hover {
       filter: drop-shadow(3px 2px $main-color);
+    }
+  }
+}
+
+@media (max-width: 1270px) {
+  .header {
+    height: 150px;
+    &__nav {
+      &-app {
+        width: auto;
+        & li {
+          padding: 0 30px;
+        }
+      }
+      &-socials {
+        width: 116px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1090px) {
+  .header {
+    &__nav {
+      justify-content: center;
+      &-app {
+        width: 70%;
+        align-content: space-between;
+        height: 105px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+      &-socials {
+        width: 110px;
+      }
+    }
+  }
+}
+
+@media (max-width: 860px) {
+  .header {
+    height: 240px;
+    &__nav {
+      &-app {
+        height: 210px;
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+      }
     }
   }
 }

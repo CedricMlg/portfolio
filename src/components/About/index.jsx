@@ -168,7 +168,7 @@ export default function About({ page }) {
           opacity: 1,
           display: "block",
         },
-        "-=1"
+        "-=0.5"
       )
       // .to(".modal__title p", {
       //   duration: 1,

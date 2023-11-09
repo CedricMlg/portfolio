@@ -4,3 +4,19 @@
     padding-top: 120px;
   }
 }
+
+@media (max-width: 1270px) { 
+  .contactPage {
+    .contact {
+      padding-top: 180px;
+    }
+  }
+}
+
+@media (max-width: 860px) { 
+  .contactPage {
+    .contact {
+      padding-top: 270px;
+    }
+  }
+}

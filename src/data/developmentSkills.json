@@ -3,11 +3,11 @@
     "e1": [
       {
         "subject": "React",
-        "mastery": 75
+        "mastery": 80
       },
       {
         "subject": "JavaScript",
-        "mastery": 80
+        "mastery": 85
       },
       {
         "subject": "SASS",
@@ -23,7 +23,7 @@
       },
       {
         "subject": "GreenSock",
-        "mastery": 40
+        "mastery": 70
       },
       {
         "subject": "StoryBook",
@@ -37,7 +37,7 @@
       },
       {
         "subject": "Jotai",
-        "mastery": 60
+        "mastery": 70
       },
       {
         "subject": "JSON",
@@ -49,15 +49,15 @@
       },
       {
         "subject": "MySQL",
-        "mastery": 65
+        "mastery": 70
       },
       {
         "subject": "PHP",
-        "mastery": 60
+        "mastery": 65
       },
       {
         "subject": "Swagger",
-        "mastery": 55
+        "mastery": 60
       }
     ]
   }

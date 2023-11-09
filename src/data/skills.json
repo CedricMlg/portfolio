@@ -11,9 +11,11 @@
     { "name": "Jotai", "logo": "/development/jotai.svg" },
     { "name": "JSON", "logo": "/development/json.svg" },
     { "name": "Jest", "logo": "/development/jest.svg" },
+    { "name": "API", "logo": "/development/api.svg" },
     { "name": "MySQL", "logo": "/development/mysql.svg" },
     { "name": "PHP", "logo": "/development/php.svg" },
-    { "name": "Swagger", "logo": "/development/swagger.svg" }
+    { "name": "Swagger", "logo": "/development/swagger.svg" },
+    { "name": "Wordpress", "logo": "/development/wordpress.svg" }
   ],
 
   "tools": [

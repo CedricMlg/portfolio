@@ -76,8 +76,9 @@ export default function About({ page }) {
     });
     // blinkTimeline.repeat(1).yoyo(true);
 
-    const { y: startY } = mySkill.current.getBoundingClientRect();
+    const { y: startY, x: startX } = mySkill.current.getBoundingClientRect();
     const windowHeight = window.innerHeight;
+    const windowWidth = window.innerWidth;
     const centerY = windowHeight / 2;
 
     mainTimeline
@@ -87,6 +88,7 @@ export default function About({ page }) {
           visibility: "hidden",
           "--visibility": "visible",
           "--top": `${startY}px`,
+          "--left": `${startX}px`,
         },
         {
           "--top": `${centerY}px`,

@@ -98,3 +98,21 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  .header {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header {
+    &__nav {
+      &-socials {
+        width: fit-content;
+        flex-direction: column;
+        height: 120px;
+      }
+    }
+  }
+}

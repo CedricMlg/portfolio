@@ -14,3 +14,18 @@
     width: 300px;
   }
 }
+
+@media (max-width: 500px) {
+  .projectCard {
+    &__block {
+      &-logo {
+        height: 270px;
+        width: 270px;
+      }
+    }
+    &__logo {
+      height: 170px;
+      width: 170px;
+    }
+  }
+}

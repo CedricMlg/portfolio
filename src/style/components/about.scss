@@ -19,10 +19,12 @@
     --visibility: hidden;
     --position: translate(0, 0);
     --top: 0px;
+    --left: 0px;
     &::before,
     &::after {
       position: fixed;
       top: var(--top);
+      left: var(--left);
       visibility: var(--visibility);
       transform: var(--position);
     }
@@ -34,13 +36,27 @@
     &::after {
       content: "skills";
       color: $main-color;
-      left: 48.2%;
+      left: calc(var(--left) + 160px);
     }
   }
 }
 
-@media (max-width: 1152px) { 
+@media (max-width: 1152px) {
   .about {
     margin-top: 200px;
   }
 }
+
+@media (max-width: 600px) {
+  .about {
+    &__skills {
+      &::after {
+        left: calc(var(--left) + 135px);
+      }
+    }
+  }
+}
+
+// @media (max-width: 428px) {
+
+// }

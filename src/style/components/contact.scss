@@ -114,3 +114,33 @@
     }
   }
 }
+
+@media (max-width: 987px) { 
+  .contact {
+    &__description {
+      margin: 30px 0 100px 0;
+    }
+    &__form {
+      & div:nth-child(1) {
+        & span {
+          top: -80px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) { 
+  .contact {
+    &__description {
+      margin: 30px 0 150px 0;
+    }
+    &__form {
+      & div:nth-child(1) {
+        & span {
+          top: -122px;
+        }
+      }
+    }
+  }
+}

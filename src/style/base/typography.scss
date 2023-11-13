@@ -411,7 +411,7 @@
   }
 }
 
-@media (max-width: 960px) { 
+@media (max-width: 960px) {
   .home {
     &__block {
       &-top {
@@ -432,12 +432,90 @@
   }
 }
 
-@media (max-width: 860px) { 
+@media (max-width: 860px) {
   .home {
     &__job {
       & h2 {
         font-size: 65px;
       }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .home {
+    &__block {
+      &-top {
+        & h1 {
+          font-size: 62px;
+          line-height: 70px;
+        }
+      }
+    }
+    &__job {
+      & h2 {
+        font-size: 60px;
+        line-height: 60px;
+      }
+      & h3 {
+        font-size: 44px;
+      }
+    }
+  }
+
+  .about {
+    &__title {
+      font-size: 58px;
+      line-height: 72px;
+    }
+    &__block {
+      &-description {
+        font-size: 34px;
+        line-height: 40px;
+      }
+    }
+    &__skills {
+      font-size: 85px;
+      line-height: 90px;
+    }
+  }
+
+  .work {
+    &__title {
+      font-size: 58px;
+      line-height: 72px;
+    }
+  }
+
+  .contact {
+    &__title {
+      font-size: 58px;
+      line-height: 72px;
+    }
+    &__description {
+      & p {
+        font-size: 34px;
+        line-height: 42px;
+      }
+    }
+    &__form {
+      & input,
+      textarea {
+        font-size: 35px;
+        line-height: 41px;
+      }
+    }
+  }
+
+  .modal {
+    &__title {
+      font-size: 85px;
+      line-height: 30px;
+      white-space: nowrap;
+    }
+    &__skill {
+      font-size: 85px;
+      line-height: 30px;
     }
   }
 }

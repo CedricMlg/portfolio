@@ -52,7 +52,8 @@
     }
     & textarea {
       padding-top: 20px;
-      height: 220px;
+      min-height: 100px;
+      height: fit-content;
       width: calc(100% - 60px);
     }
   }
@@ -66,7 +67,7 @@
   }
 }
 
-@media (max-width: 1820px) { 
+@media (max-width: 1820px) {
   .contact {
     &__description {
       margin: 30px 0 100px 0;
@@ -81,7 +82,7 @@
   }
 }
 
-@media (max-width: 1152px) { 
+@media (max-width: 1152px) {
   .contact {
     &__description {
       margin: 30px 0 60px 0;
@@ -115,7 +116,7 @@
   }
 }
 
-@media (max-width: 987px) { 
+@media (max-width: 987px) {
   .contact {
     &__description {
       margin: 30px 0 100px 0;
@@ -130,7 +131,7 @@
   }
 }
 
-@media (max-width: 600px) { 
+@media (max-width: 600px) {
   .contact {
     &__description {
       margin: 30px 0 150px 0;
@@ -139,6 +140,82 @@
       & div:nth-child(1) {
         & span {
           top: -122px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 428px) {
+  .contact {
+    &__description {
+      margin: 30px 0 80px 0;
+    }
+    &__form {
+      grid-row-gap: 46px;
+      & input {
+        height: 48px;
+      }
+      & div:nth-child(1) {
+        & span {
+          top: -64px;
+        }
+      }
+      & div:nth-child(2) {
+        & span {
+          top: -34px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 427px) {
+  .contact {
+    &__description {
+      margin: 30px 0 100px 0;
+    }
+    &__form {
+      & div:nth-child(1) {
+        & span {
+          top: -84px;
+        }
+      }
+      & div:nth-child(2) {
+        & span {
+          top: -34px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  .contact {
+    &__description {
+      margin: 30px 0 110px 0;
+    }
+    &__form {
+      grid-row-gap: 62px;
+      & div:nth-child(2) {
+        & span {
+          top: -56px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 336px) {
+  .contact {
+    &__description {
+      margin: 30px 0 130px 0;
+    }
+    &__form {
+      grid-row-gap: 62px;
+      & div:nth-child(1) {
+        & span {
+          top: -108px;
         }
       }
     }

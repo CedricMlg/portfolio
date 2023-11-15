@@ -29,3 +29,18 @@
     }
   }
 }
+
+@media (max-width: 428px) {
+  .projectCard {
+    &__block {
+      &-logo {
+        height: 220px;
+        width: 220px;
+      }
+    }
+    &__logo {
+      height: 140px;
+      width: 140px;
+    }
+  }
+}

@@ -519,3 +519,107 @@
     }
   }
 }
+
+@media (max-width: 428px) {
+  .header {
+    &__nav {
+      & a {
+        font-size: 28px;
+        line-height: 40px;
+      }
+    }
+  }
+  
+  .home {
+    &__block {
+      &-top {
+        & h1 {
+          font-size: 56px;
+          line-height: 60px;
+        }
+      }
+    }
+    &__job {
+      & h2 {
+        font-size: 50px;
+        line-height: 50px;
+      }
+      & h3 {
+        font-size: 40px;
+      }
+    }
+  }
+
+  .about {
+    &__title {
+      font-size: 42px;
+      line-height: 50px;
+    }
+    &__block {
+      &-description {
+        font-size: 24px;
+        line-height: 28px;
+      }
+    }
+    &__skills {
+      font-size: 50px;
+      line-height: 58px;
+    }
+  }
+
+  .work {
+    &__title {
+      font-size: 42px;
+      line-height: 50px;
+    }
+  }
+
+  .contact {
+    &__title {
+      font-size: 42px;
+      line-height: 50px;
+    }
+    &__description {
+      & p {
+        font-size: 24px;
+        line-height: 28px;
+      }
+    }
+    &__form {
+      & input,
+      textarea {
+        font-size: 26px;
+        line-height: 28px;
+      }
+      & span {
+        font-size: 18px;
+        line-height: 26px;
+      }
+    }
+  }
+
+  .main-button {
+    & span {
+      &:first-child {
+        font-size: 24px;
+        line-height: 16px;
+      }
+      &:last-child {
+        font-size: 24px;
+        line-height: 16px;
+      }
+    }
+  }
+
+  .modal {
+    &__title {
+      font-size: 85px;
+      line-height: 30px;
+      white-space: nowrap;
+    }
+    &__skill {
+      font-size: 85px;
+      line-height: 30px;
+    }
+  }
+}

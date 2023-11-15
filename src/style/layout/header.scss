@@ -116,3 +116,31 @@
     }
   }
 }
+
+@media (max-width: 378px) {
+  .header {
+    &__logo {
+      width: 36px;
+      height: 68px;
+    }
+    &__nav {
+      &-app {
+        & li {
+          padding: 0 15px;
+        }
+      }
+      &-socials {
+        width: fit-content;
+        flex-direction: column;
+        height: 120px;
+      }
+    }
+  }
+
+  .socials {
+    & svg {
+      height: 34px;
+      width: 34px;
+    }
+  }
+}

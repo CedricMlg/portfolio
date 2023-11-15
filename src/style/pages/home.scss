@@ -123,6 +123,24 @@
     &__job {
       & h2 {
         height: 120px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 428px) {
+  .home {
+    &__block {
+      &-top {
+        & h1 {
+          height: 120px;
+        }
+      }
+    }
+    &__job {
+      & h2 {
+        height: 104px;
       }
     }
   }

@@ -105,6 +105,7 @@
       & h2 {
         white-space: wrap;
         width: 290px;
+        height: 188px;
       }
     }
   }
@@ -117,6 +118,11 @@
         & h1 {
           height: 140px;
         }
+      }
+    }
+    &__job {
+      & h2 {
+        height: 120px;
       }
     }
   }
